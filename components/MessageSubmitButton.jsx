@@ -5,7 +5,7 @@ import SendIcon from '@material-ui/icons/Send';
 const MessageSubmitButto = ({ inputEl, name, setText, text}) => {
   return (
     <IconButton disabled={text === ''} onClick={() => {
-      pushMessage({name: 'testUser01', text})
+      pushMessage({ name, text })
       setText('')
       inputEl.current.focus()
     }}>
